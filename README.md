@@ -8,32 +8,28 @@ This project implements three tasks based on provided Figma designs using React.
 
 - React
 - Tailwind CSS
-- JSON Server (for building mock API data)
 - React DnD (for drag-and-drop functionality)
 - TanStack Table (for building tables)
+- [https://mocki.io/v1/98df0de2-16da-476b-93a9-c9d3aa9f7e86](mocki.io)(to mock the data)
 
 ## Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/pratyushsingha/chaicode-machine-coding-round.git
-    ```
+   ```sh
+   git clone https://github.com/pratyushsingha/chaicode-machine-coding-round.git
+   ```
 2. Navigate to the project directory:
-    ```sh
-    cd masterji-assignment
-    ```
+   ```sh
+   cd masterji-assignment
+   ```
 3. Install dependencies:
-    ```sh
-    bun i
-    ```
-4. Start the JSON server:
-    ```sh
-    npx json-server db/data.json --port 3000
-    ```
-5. Start the React application:
-    ```sh
-    bun run dev
-    ```
+   ```sh
+   bun i
+   ```
+4. Start the React application:
+   ```sh
+   bun run dev
+   ```
 
 ## Usage
 
@@ -69,5 +65,3 @@ The base URL `/` will redirect to the OTP Form at `/otp-form`.
 - Implements a paginated table using TanStack Table.
 - Lists batches of a course and their statuses.
 - Includes a search option to filter the batches.
-
-

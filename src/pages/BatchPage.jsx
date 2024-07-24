@@ -63,9 +63,11 @@ const BatchPage = () => {
   const [globalFilter, setGlobalFilter] = useState("");
 
   const getBatches = async () => {
-    const response = await fetch("http://localhost:3000/batches");
+    const response = await fetch(
+      "https://mocki.io/v1/98df0de2-16da-476b-93a9-c9d3aa9f7e86"
+    );
     const data = await response.json();
-    setBatches(data);
+    setBatches(data.batches);
   };
 
   useEffect(() => {

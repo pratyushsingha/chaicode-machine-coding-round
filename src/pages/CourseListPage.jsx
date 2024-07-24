@@ -10,9 +10,11 @@ const CourseListPage = () => {
 
   const getBundles = async () => {
     try {
-      const response = await fetch("http://localhost:3000/bundles");
+      const response = await fetch(
+        "https://mocki.io/v1/98df0de2-16da-476b-93a9-c9d3aa9f7e86"
+      );
       const data = await response.json();
-      setBundles(data);
+      setBundles(data.bundles);
     } catch (error) {
       console.error(error);
     }
@@ -36,7 +38,6 @@ const CourseListPage = () => {
   const removeCard = (_id) => {
     setBundles((prev) => prev.filter((bundle) => bundle._id === _id));
   };
-
 
   const moveCardOnTop = useCallback((index) => {
     setBundles((prev) =>
