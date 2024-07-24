@@ -20,7 +20,7 @@ This project implements three tasks based on provided Figma designs using React.
    ```
 2. Navigate to the project directory:
    ```sh
-   cd masterji-assignment
+   cd chaicode-machine-coding-round
    ```
 3. Install dependencies:
    ```sh
